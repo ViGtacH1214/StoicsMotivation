@@ -50,7 +50,7 @@ function updateCountdown() {
     const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-    countdownElement.innerHTML = `${days} D:${hours} H:${minutes} M:${seconds} S`;
+    countdownElement.innerHTML = `${days} : ${hours} : ${minutes} : ${seconds}`;
 }
 
 // Initialize countdown interval and dates
