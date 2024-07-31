@@ -12,11 +12,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
-  <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.css">
-  <script type="text/javascript" src="js/flipdown/flipdown.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-
   <style>
     body {
       font: 400 15px Lato, sans-serif;
@@ -262,7 +257,7 @@
 
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-      
+
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
@@ -272,7 +267,7 @@
         <a class="navbar-brand" href="#myPage">Racket Program</a>
         <img style="width: 48px; border-radius: 50%;" src="logo.jpg" alt="logo">
       </div>
-      
+
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about">ABOUT</a></li>
@@ -443,29 +438,41 @@
 
   <!-- Container (Pricing Section) -->
 
- 
-  
+
   <div id="pricing" class="container-fluid">
     <div class="text-center">
       <h2>Pricing</h2>
       <h4>Choose a payment plan that works for you</h4>
     </div>
 
-       <!-- Count-Down Timer -->
-  <div class="example">
+    <!-- Count-Down Timer -->
+    <!-- <div class="example">
     <div id="flipdown" class="flipdown"></div>
-  </div>
+  </div> -->
+
+
 
     <div class="row slideanim">
 
       <div class="col-sm-4 col-xs-12">
+
         <div class="panel panel-default text-center">
           <div class="panel-heading">
             <h1>Free</h1>
+
           </div>
           <div class="panel-footer">
             <h3>$0</h3>
-            <h4>It’s only available for a limited time!</h4>
+            <!-- <h4>It’s only available for a limited time!</h4> -->
+
+            <!-- Count_Down Timer -->
+            <div class="offer-container">
+              <div class="offer-banner">
+                <div id="countdown" class="countdown" style="font-size: larger; font-weight: bold;"></div>
+              </div>
+            </div>
+          
+
             <a href="https://www.t.me/mruncrowned" style="text-decoration: none; color: black;"><button
                 class="btn btn-lg">Enroll Now</button></a>
           </div>
@@ -593,6 +600,8 @@
     })
   </script>
 
+
+  <script src="timer_script.js"></script>
 </body>
 
 </html>
